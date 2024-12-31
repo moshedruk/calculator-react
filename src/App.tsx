@@ -32,11 +32,14 @@ function App() {
   }
 
   const handleOperation = (operation: string) => {
+    setIsResult(false);
     // אם התצוגה כבר מכילה פעולות, לא נוסיף פעולות נוספות
     if (operations.includes(display[display.length - 1])) {
       setDisplay(display.slice(0, -1) + operation);
+      
     } else {
       setDisplay(display + operation);
+      console.log("ff")
     }
   }
 
