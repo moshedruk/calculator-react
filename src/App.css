@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card-calculator {
+ display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 5px;
+  background-color: dodgerblue;
+  padding: 5px;
+}
+.number {
+  font-size: 2em;
+  font-weight: bold;
+  border: 2px solid; /* Corrected this */
+  border-radius: 5px; /* Added proper rounded corners */
+  padding: 10px; /* Add some padding for better spacing */
+  text-align: center; /* Center the content */
+  cursor: pointer; /* Indicate it's clickable */
+  display: inline-block; /* Ensure it appears as a block element */
+}
+.operation{
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid; /* Corrected this */
+  border-radius: 5px; /* Added proper rounded corners */
+  padding: 10px; /* Add some padding for better spacing */
+  text-align: center; /* Center the content */
+  cursor: pointer; /* Indicate it's clickable */
+  display: inline-block; /* Ensure it appears as a block element */
+}
+
+.read-the-docs {
+  color: #888;
+}
